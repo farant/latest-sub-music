@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hey there!</title>
+		<script src="https://w.soundcloud.com/player/api.js" type="text/javascript"></script>
+		<style>
+		#categoryWrapper {
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			text-align: center;
+			padding-top: 20px;
+		}
+
+		select {
+			font-size: 20px;
+		}
+
+		#next, #prev {
+			font-size: 64px;
+			font-family: Helvetica;
+			text-align: center;
+			cursor: pointer;
+			padding: 35px;
+	    padding-bottom: 0px;
+	    padding-top: 5px;
+		}
+
+		#next {
+			float: right;
+		}
+
+		#prev {
+			float: left;
+		}
+
+		.player-wrapper {
+			position: fixed;
+			left: 0px;
+			top: 0px;
+			right: 0px;
+			background-color: white;
+		}
+
+		#song-list {
+    	padding-top: 360px;
+		}
+
+		#song-list ul {
+		    list-style-type: none;
+		    padding-left: 0px;
+		}
+
+		#song-list li {
+			border-top: 1px solid #ddd;
+			font-family: Helvetica;
+			background: #eee;
+			color: #555;
+			cursor: pointer;
+			white-space: nowrap;
+			overflow: hidden;
+			box-sizing: border-box;
+			height: 45px;
+		}
+
+		.sub {
+		    font-weight: bold;
+		    padding: 13px;
+		    padding-right: 10px;
+		    text-align: center;
+		    min-width: 141px;
+		    display: inline-block;
+		    font-size: 13px;
+		    color: #999;
+		    vertical-align: top;
+		}
+
+		.added {
+		    padding-right: 20px;
+		    display: inline-block;
+		    vertical-align: top;
+		    text-transform: uppercase;
+		    padding: 13px;
+		    padding-right: 20px;
+		    background: white;
+		}
+
+		.title {
+		    display: inline-block;
+		    /* max-width: 65%; */
+		    padding: 13px;
+		    white-space: nowrap;
+		}
+
+		#song-list li.current {
+		    background: #ddf;
+		    color: black;
+		}
+
+		</style>
+		<script type="text/javascript" src="bundle.js"></script>
+	</head>
+	<body>
+		<div class="player-wrapper">
+			<div id="player">
+			</div>
+			<div id="prev">
+				&laquo; PREV
+			</div>
+		<div id="categoryWrapper">
+			<select>
+				<option>All Categories</option>
+				<option>futurepopmusic</option>
+				<option>electronicmusic</option>
+				<option>Cyberpunk_Music</option>
+			</select>
+		</div>
+			<div id="next">
+				NEXT &raquo;
+			</div>
+		</div>
+		<div id="song-list">
+		</div>
+	</body>
+</html>
